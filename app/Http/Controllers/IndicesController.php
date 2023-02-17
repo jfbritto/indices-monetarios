@@ -80,20 +80,20 @@ class IndicesController extends Controller
      * Define a formatação do retorno
      *
      * @param array $anoMesIndice
-     * @return array
+     * @return string
      */
-    private function tipoRetorno($anoMesIndice): array 
+    private function tipoRetorno($anoMesIndice): string 
     {
-        // return json_encode($anoMesIndice);
-        return $anoMesIndice;
+        return json_encode($anoMesIndice);
+        // return $anoMesIndice;
     }
 
     /**
      * Busca os índices TJSP
      *
-     * @return array
+     * @return string
      */
-    public function indiceTjsp(): array
+    public function indiceTjsp(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_tjsp);
         $anoMesIndice = [];
@@ -112,9 +112,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices ORTN
      *
-     * @return array
+     * @return string
      */
-    public function indiceOrtn(): array
+    public function indiceOrtn(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_ortn);
         $anoMesIndice = [];
@@ -133,9 +133,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices ORTN
      *
-     * @return array
+     * @return string
      */
-    public function indiceUfir(): array
+    public function indiceUfir(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_ufir);
         $anoMesIndice = [];
@@ -154,9 +154,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices CADERNETA POUPANÇA
      *
-     * @return array
+     * @return string
      */
-    public function indiceCadernetaPoupanca(): array
+    public function indiceCadernetaPoupanca(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_caderneta_poupanca);
         $anoMesIndice = [];
@@ -175,9 +175,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices IGPDI
      *
-     * @return array
+     * @return string
      */
-    public function indiceIgpdi(): array
+    public function indiceIgpdi(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_igpdi);
         $anoMesIndice = [];
@@ -196,9 +196,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices IGPM
      *
-     * @return array
+     * @return string
      */
-    public function indiceIgpm(): array
+    public function indiceIgpm(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_igpm);
         $anoMesIndice = [];
@@ -217,9 +217,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices INPC
      *
-     * @return array
+     * @return string
      */
-    public function indiceInpc(): array
+    public function indiceInpc(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_inpc);
         $anoMesIndice = [];
@@ -238,9 +238,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices IPCA
      *
-     * @return array
+     * @return string
      */
-    public function indiceIpca(): array
+    public function indiceIpca(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_ipca);
         $anoMesIndice = [];
@@ -259,9 +259,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices SELIC
      *
-     * @return array
+     * @return string
      */
-    public function indiceSelic(): array
+    public function indiceSelic(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_selic);
         $anoMesIndice = [];
@@ -280,9 +280,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices IPC
      *
-     * @return array
+     * @return string
      */
-    public function indiceIpcFipe(): array
+    public function indiceIpcFipe(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_ipc_fipe);
         $anoMesIndice = [];
@@ -301,9 +301,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices TR
      *
-     * @return array
+     * @return string
      */
-    public function indiceTr(): array
+    public function indiceTr(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_tr);
         $anoMesIndice = [];
@@ -322,9 +322,9 @@ class IndicesController extends Controller
     /**
      * Busca os índices TJMG
      *
-     * @return array
+     * @return string
      */
-    public function indiceTjmg(): array
+    public function indiceTjmg(): string
     {
         $crawler = $this->goutteClient->request('GET', self::url_tjmg);
         $anoMesIndice = [];
