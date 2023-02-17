@@ -22,11 +22,5 @@ Instalar as dependências
 composer update
 ```
 
-Gerar a key do projeto Laravel
-
-```sh
-php artisan key:generate
-```
-
 Acessar o projeto
 [http://localhost:8989](http://localhost:8989)
