@@ -23,13 +23,13 @@ Entre no diretório
 cd indices-monetarios/
 ```
 
-Acessar o container
+Acesse o container
 
 ```sh
 docker-compose exec php bash
 ```
 
-Instalar as dependências
+Instale as dependências
 
 ```sh
 composer update
