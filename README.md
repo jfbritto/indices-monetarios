@@ -3,11 +3,24 @@
 ### Passo a passo
 
 Clone o Repositório
+```sh
+git clone https://github.com/jfbritto/indices-monetarios.git
+```
 
 Suba os containers
 
 ```sh
 docker-compose up -d
+```
+
+Dê permissão
+```sh
+sudo chmod 777 -R indices-monetarios/
+```
+
+Entre no diretório
+```sh
+cd indices-monetarios/
 ```
 
 Acessar o container
@@ -22,5 +35,5 @@ Instalar as dependências
 composer update
 ```
 
-Acessar o projeto
+Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
